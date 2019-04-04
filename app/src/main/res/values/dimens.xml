@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="auth_login_screen_max_width">300dp</dimen>
+    <dimen name="auth_login_screen_max_height">600dp</dimen>
+
+    <dimen name="auth_login_form_h_padding">16dp</dimen>
+    <dimen name="auth_login_form_v_padding">16dp</dimen>
+
+    <dimen name="auth_login_button_v_margin">8dp</dimen>
+
+    <dimen name="auth_login_title_text_size">24dp</dimen>
+    <dimen name="auth_login_button_text_size">20dp</dimen>
+
+</resources>

@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Compass</string>
+
+    <string name="auth_login_title_text">Вход или регистрация</string>
+    <string name="through_social_networks">через социальные сети</string>
+
+    <string name="auth_login_button_vk">ВКонтакте</string>
+    <string name="auth_login_button_facebook">Facebook</string>
+    <string name="auth_login_button_microsoft">Microsoft</string>
+    <string name="auth_login_button_yandex">Яндекс</string>
+    <string name="auth_login_button_google">Google</string>
+    <string name="auth_login_button_ok">Однокласники</string>
+    <string name="auth_login_button_twitter">Twitter</string>
+    <string name="auth_login_button_mail">Mail</string>
+
 </resources>

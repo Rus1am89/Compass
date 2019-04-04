@@ -8,4 +8,114 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AuthLoginFragment" parent="math_parent">
+        <item name="android:maxWidth">@dimen/auth_login_screen_max_width</item>
+        <item name="android:maxHeight">@dimen/auth_login_screen_max_height</item>
+
+        <item name="android:layout_gravity">center</item>
+
+        <item name="android:paddingTop">@dimen/auth_login_form_h_padding</item>
+        <item name="android:paddingBottom">@dimen/auth_login_form_h_padding</item>
+        <item name="android:paddingLeft">@dimen/auth_login_form_h_padding</item>
+        <item name="android:paddingRight">@dimen/auth_login_form_h_padding</item>
+    </style>
+
+    <style name="auth_login_title" parent="math_parent_width">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/auth_login_button_text_size</item>
+    </style>
+
+    <style name="auth_login_footer" parent="math_parent_width">
+        <item name="android:paddingTop">@dimen/auth_login_form_v_padding</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- auth login button -->
+
+    <style name="auth_login_button_vk" parent="auth_login_button_base">
+        <item name="android:background">@drawable/auth_login_rounded_corner_vk</item>
+        <item name="android:drawableStart">@drawable/ic_vk</item>
+        <item name="android:drawableLeft">@drawable/ic_vk</item>
+        <item name="android:layout_marginBottom">@dimen/auth_login_button_v_margin</item>
+    </style>
+
+    <style name="auth_login_button_facebook" parent="auth_login_button_base">
+        <item name="android:background">@drawable/auth_login_rounded_corner_facebook</item>
+        <item name="android:drawableStart">@drawable/ic_facebook</item>
+        <item name="android:drawableLeft">@drawable/ic_facebook</item>
+        <item name="android:layout_marginBottom">@dimen/auth_login_button_v_margin</item>
+    </style>
+
+    <style name="auth_login_button_microsoft" parent="auth_login_button_base">
+        <item name="android:background">@drawable/auth_login_rounded_corner_microsoft</item>
+        <item name="android:drawableStart">@drawable/ic_microsoft</item>
+        <item name="android:drawableLeft">@drawable/ic_microsoft</item>
+        <item name="android:layout_marginBottom">@dimen/auth_login_button_v_margin</item>
+    </style>
+
+    <style name="auth_login_button_yandex" parent="auth_login_button_base">
+        <item name="android:background">@drawable/auth_login_rounded_corner_yandex</item>
+        <item name="android:drawableStart">@drawable/ic_yandex</item>
+        <item name="android:drawableLeft">@drawable/ic_yandex</item>
+        <item name="android:textColor">#46809C</item>
+    </style>
+
+    <style name="auth_login_button_google" parent="auth_login_button_base">
+        <item name="android:background">@drawable/auth_login_rounded_corner_google</item>
+        <item name="android:drawableStart">@drawable/ic_google</item>
+        <item name="android:drawableLeft">@drawable/ic_google</item>
+        <item name="android:layout_marginTop">@dimen/auth_login_button_v_margin</item>
+    </style>
+
+    <style name="auth_login_button_ok" parent="auth_login_button_base">
+        <item name="android:background">@drawable/auth_login_rounded_corner_ok</item>
+        <item name="android:drawableStart">@drawable/ic_odnoklassniki</item>
+        <item name="android:drawableLeft">@drawable/ic_odnoklassniki</item>
+        <item name="android:layout_marginTop">@dimen/auth_login_button_v_margin</item>
+    </style>
+
+    <style name="auth_login_button_twitter" parent="auth_login_button_base">
+        <item name="android:background">@drawable/auth_login_rounded_corner_twitter</item>
+        <item name="android:drawableStart">@drawable/ic_twitter</item>
+        <item name="android:drawableLeft">@drawable/ic_twitter</item>
+        <item name="android:layout_marginTop">@dimen/auth_login_button_v_margin</item>
+    </style>
+
+    <style name="auth_login_button_mail" parent="auth_login_button_base">
+        <item name="android:background">@drawable/auth_login_rounded_corner_mail</item>
+        <item name="android:drawableStart">@drawable/ic_mail</item>
+        <item name="android:drawableLeft">@drawable/ic_mail</item>
+        <item name="android:layout_marginTop">@dimen/auth_login_button_v_margin</item>
+    </style>
+
+    <style name="auth_login_button_base" parent="math_parent_width">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/auth_login_button_text_size</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- layout height & width variation-->
+
+    <style name="math_parent">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="wrap_content">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="math_parent_height">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="math_parent_width">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
 </resources>
