@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_graph"
+    app:startDestination="@id/authSocialButtonFragment">
+
+    <fragment
+        android:id="@+id/authSocialButtonFragment"
+        android:name="ru.naviwork.compass.auth.AuthSocialButtonFragment"
+        android:label="auth_login_fr"
+        tools:layout="@layout/auth_login_fr">
+        <action
+            android:id="@+id/action_authSocialButtonFragment_to_authWebFragment"
+            app:destination="@id/authWebFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/authWebFragment"
+        android:name="ru.naviwork.compass.auth.AuthWebFragment"
+        android:label="auth_login_web_fr"
+        tools:layout="@layout/auth_login_web_fr" />
+</navigation>

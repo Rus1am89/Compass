@@ -1,101 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    style="@style/math_parent"
-    android:background="@color/colorPrimary">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <androidx.constraintlayout.widget.ConstraintLayout style="@style/AuthLoginFragment">
+    <data />
 
-        <TextView
-            android:id="@+id/auth_login_title"
-            style="@style/auth_login_title"
-            android:text="@string/auth_login_title_text"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        style="@style/math_parent"
+        android:background="@color/colorPrimary">
 
-        <TextView
-            android:id="@+id/auth_login_footer"
-            style="@style/auth_login_footer"
-            android:text="@string/through_social_networks"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/auth_login_title" />
+        <androidx.constraintlayout.widget.ConstraintLayout style="@style/AuthLoginFragment">
 
-        <Button
-            android:id="@+id/login_vk"
-            style="@style/auth_login_button_vk"
-            android:text="@string/auth_login_button_vk"
-            app:layout_constraintBottom_toTopOf="@+id/login_facebook"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent" />
+            <TextView
+                android:id="@+id/auth_login_title"
+                style="@style/auth_login_title"
+                android:text="@string/auth_login_title_text"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/login_facebook"
-            style="@style/auth_login_button_facebook"
-            android:paddingStart="9dp"
-            android:paddingLeft="9dp"
-            android:paddingEnd="0dp"
-            android:paddingRight="0dp"
-            android:text="@string/auth_login_button_facebook"
-            app:layout_constraintBottom_toTopOf="@+id/login_microsoft"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent" />
+            <TextView
+                android:id="@+id/auth_login_footer"
+                style="@style/auth_login_footer"
+                android:text="@string/through_social_networks"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/auth_login_title" />
 
-        <Button
-            android:id="@+id/login_microsoft"
-            style="@style/auth_login_button_microsoft"
-            android:text="@string/auth_login_button_microsoft"
-            app:layout_constraintBottom_toTopOf="@+id/login_yandex"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent" />
+            <Button
+                android:id="@+id/login_vk"
+                style="@style/auth_login_button_vk"
+                android:text="@string/auth_login_button_vk"
+                app:layout_constraintBottom_toTopOf="@+id/login_facebook"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
 
-        <!-- Center -->
+            <Button
+                android:id="@+id/login_facebook"
+                style="@style/auth_login_button_facebook"
+                android:paddingStart="9dp"
+                android:paddingLeft="9dp"
+                android:paddingEnd="0dp"
+                android:paddingRight="0dp"
+                android:text="@string/auth_login_button_facebook"
+                app:layout_constraintBottom_toTopOf="@+id/login_microsoft"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
 
-        <Button
-            android:id="@+id/login_yandex"
-            style="@style/auth_login_button_yandex"
-            android:text="@string/auth_login_button_yandex"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/auth_login_footer" />
+            <Button
+                android:id="@+id/login_microsoft"
+                style="@style/auth_login_button_microsoft"
+                android:text="@string/auth_login_button_microsoft"
+                app:layout_constraintBottom_toTopOf="@+id/login_yandex"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
 
-        <Button
-            android:id="@+id/login_google"
-            style="@style/auth_login_button_google"
-            android:text="@string/auth_login_button_google"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/login_yandex" />
+            <Button
+                android:id="@+id/login_yandex"
+                style="@style/auth_login_button_yandex"
+                android:text="@string/auth_login_button_yandex"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/auth_login_footer" />
 
-        <Button
-            android:id="@+id/login_ok"
-            style="@style/auth_login_button_ok"
-            android:paddingStart="9dp"
-            android:paddingLeft="9dp"
-            android:paddingEnd="0dp"
-            android:paddingRight="0dp"
-            android:text="@string/auth_login_button_ok"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/login_google" />
+            <Button
+                android:id="@+id/login_google"
+                style="@style/auth_login_button_google"
+                android:text="@string/auth_login_button_google"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/login_yandex" />
 
-        <Button
-            android:id="@+id/login_twitter"
-            style="@style/auth_login_button_twitter"
-            android:text="@string/auth_login_button_twitter"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/login_ok" />
+            <Button
+                android:id="@+id/login_ok"
+                style="@style/auth_login_button_ok"
+                android:paddingStart="9dp"
+                android:paddingLeft="9dp"
+                android:paddingEnd="0dp"
+                android:paddingRight="0dp"
+                android:text="@string/auth_login_button_ok"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/login_google" />
 
-        <Button
-            android:id="@+id/login_mail"
-            style="@style/auth_login_button_mail"
-            android:text="@string/auth_login_button_mail"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/login_twitter" />
+            <Button
+                android:id="@+id/login_twitter"
+                style="@style/auth_login_button_twitter"
+                android:text="@string/auth_login_button_twitter"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/login_ok" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+
+            <Button
+                android:id="@+id/login_mail"
+                style="@style/auth_login_button_mail"
+                android:text="@string/auth_login_button_mail"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/login_twitter" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
